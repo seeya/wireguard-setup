@@ -218,6 +218,7 @@ function newClient() {
 		HOME_DIR="/root"
 	fi
 
+	HOME_DIR="/home/ubuntu"
 	# Create client file and add the server as a peer
 	echo "[Interface]
 PrivateKey = ${CLIENT_PRIV_KEY}
