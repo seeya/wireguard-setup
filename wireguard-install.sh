@@ -174,7 +174,7 @@ function newClient() {
 	echo "Tell me a name for the client."
 	echo "The name must consist of alphanumeric character. It may also include an underscore or a dash and can't exceed 15 chars."
 
-	CLIENT_NAME=$1
+	CLIENT_NAME=lightsail
 
 	for DOT_IP in {2..254}; do
 		DOT_EXISTS=$(grep -c "${SERVER_WG_IPV4::-1}${DOT_IP}" "/etc/wireguard/${SERVER_WG_NIC}.conf")
